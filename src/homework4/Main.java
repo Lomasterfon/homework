@@ -29,7 +29,6 @@ public class Main {
 				int byteread;
 				for (; (byteread = inputStream.read(buffer)) > 0;) {
 					System.out.println(byteread);
-					byteread = inputStream.read(buffer);
 					outputStream.write(buffer, 0, byteread);
 				}
 			} catch (FileNotFoundException e) {
